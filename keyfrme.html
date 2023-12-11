@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box
+        {
+            height: 200px;
+            width: 200px;
+            background-color: slateblue;
+            animation: anim 10s infinite;
+        }
+        body{
+            animation: anim2 10s infinite;
+        }
+        @keyframes anim2{
+            25%
+            {
+                background-image: url('images/1.jfif');
+            }
+            50%
+            {
+                background-image: url('images/2.jpg');
+            }
+            75%
+            {
+                background-image: url('images/3.jfif');
+            }
+            100%
+            {
+                background-image: url('images/4.jfif');
+            }
+            
+        }
+        @keyframes anim
+        {
+            25%
+            {
+                border-radius: 50%;
+                background-color: cadetblue;
+            }
+            50%
+            {
+                border-radius: 20%;
+                background-color: lightcoral;
+            }
+            75%
+            {
+                border-radius: 40%;
+             background-color: aquamarine;
+            }
+            100%
+            {
+                border-radius: 10%;
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+</body>
+</html>
